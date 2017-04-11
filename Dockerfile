@@ -1,4 +1,4 @@
-FROM rocklobster/docker-chocolatey
+FROM rocklobster/chocolatey:0.10.5
 
 LABEL maintainer="tom@thingamajig.net"
 LABEL description="Windows Server Core with Pester
