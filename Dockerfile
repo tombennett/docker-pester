@@ -1,9 +1,9 @@
 FROM rocklobster/docker-chocolatey
 
 LABEL maintainer="tom@thingamajig.net"
-LABEL description="Windows Server Core with Chocolatey"
+LABEL description="Windows Server Core with Pester
 
-ENV pester_version=3.4.6
+ARG pester_version=3.4.6
 
 RUN powershell -command 'choco install pester --version ${pester_version} --force'
 	
